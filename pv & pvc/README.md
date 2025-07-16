@@ -8,7 +8,7 @@ This guide provides the steps to install and configure the AWS EBS CSI Driver on
 
 ## EKS cluster
 
-================================================================== Setup Kubernetes using eksctl =================================================================
+========== Setup Kubernetes using eksctl ===================
 ### Install AWS CLI
 
   sudo apt update
