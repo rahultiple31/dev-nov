@@ -27,11 +27,17 @@ Secret access : nzlucqrMTuE/Zoz/Zy4B47PRI8RJ+
 
 Refer--https://docs.aws.amazon.com/eks/latest/userguide/install-kubectl.html
 
-$ sudo su
-$ curl -O https://s3.us-west-2.amazonaws.com/amazon-eks/1.27.1/2023-04-19/bin/linux/amd64/kubectl
-$ ll , $ chmod +x ./kubectl  //Gave executable permisions
-$ mv kubectl /bin   //Because all our executable files are in /bin
-$ kubectl version --output=yaml
+sudo su
+
+curl -O https://s3.us-west-2.amazonaws.com/amazon-eks/1.27.1/2023-04-19/bin/linux/amd64/kubectl
+
+ll
+
+chmod +x ./kubectl
+
+mv kubectl /bin
+
+kubectl version --output=yaml
 
 -------------------------------------------
 
@@ -39,11 +45,15 @@ $ kubectl version --output=yaml
  
 Refer--https://github.com/eksctl-io/eksctl/blob/main/README.md#installation
 
-$ curl --silent --location "https://github.com/weaveworks/eksctl/releases/latest/download/eksctl_$(uname -s)_amd64.tar.gz" | tar xz -C /tmp
-$ cd /tmp
-$ ll
-$ sudo mv /tmp/eksctl /bin
-$ eksctl version
+curl --silent --location "https://github.com/weaveworks/eksctl/releases/latest/download/eksctl_$(uname -s)_amd64.tar.gz" | tar xz -C /tmp
+
+cd /tmp
+
+ll
+
+sudo mv /tmp/eksctl /bin
+
+eksctl version
 
 -------------------------------------------
 
