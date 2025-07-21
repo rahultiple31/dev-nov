@@ -19,5 +19,6 @@
 
 
 # Delete Argocd
-
+```
 helm uninstall argocd --namespace argocd
+```
