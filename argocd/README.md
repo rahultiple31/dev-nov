@@ -1,7 +1,7 @@
 # Deploy Argocd on kubernetes cluster using helm chart
 
 ## Deploy Argocd on kubernetes cluster
-
+```
 •	helm repo list
 •	helm repo add argo https://argoproj.github.io/argo-helm
 •	helm repo list
@@ -14,6 +14,8 @@
 •	kubectl get all -n argocd
 •	kubectl get nodes -o wide
 •	kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d
+
+```
 
 
 # Delete Argocd
